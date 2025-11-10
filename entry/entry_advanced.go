@@ -5,9 +5,6 @@ package entry
 // durch ein Komma getrennt.
 // Gibt es keines oder mehrere Kommas im String, wird ein leerer Eintrag zurückgegeben.
 func FromWordPairCsv(pair string) Entry {
-	// Hinweis: Teilen Sie den String pair in zwei Wörter auf.
-	// Dafür können Sie die Funktion strings.Split() verwenden.
-
 	// TODO
 	return Empty()
 }
