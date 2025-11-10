@@ -9,11 +9,9 @@ import "strings"
 func FromWordPairCsv(pair string) Entry {
 	// Hinweis: Teilen Sie den String pair in zwei Wörter auf.
 	// Dafür können Sie die Funktion strings.Split() verwenden.
-	//solution:begin
 	words := strings.Split(pair, ",")
 	if len(words) == 2 {
 		return New(words[0], words[1])
 	}
-	//solution:end
 	return Empty()
 }
