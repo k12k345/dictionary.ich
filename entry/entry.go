@@ -18,18 +18,18 @@ func Empty() Entry {
 // De gibt den deutschen Eintrag zurück.
 func (e Entry) De() string {
 	// TODO
-	return ""
+	return e.de
 }
 
 // En gibt den englischen Eintrag zurück.
 func (e Entry) En() string {
 	// TODO
-	return ""
+	return e.en
 }
 
 // IsValid gibt true zurück, wenn der Eintrag gültig ist.
 // Ein Eintrag ist gültig, wenn sowohl das deutsche als auch das englische Wort nicht leer sind.
 func (e Entry) IsValid() bool {
 	// TODO
-	return false
+	return e.de != "" && e.en != ""
 }
